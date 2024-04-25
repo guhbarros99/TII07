@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script>
+
+        //let numero, resp
+
+        // estrutura condicional SE
+        /*if((numero = parseInt(prompt("Digite um numero inteiro:")))
+         === 0){
+            //alert("ZERO!!")
+            resp = "ZERO"
+        }else if(numero % 2 == 0){
+           // alert("Par!!")
+           resp = "PAR"
+        }else{
+           // alert("Ímpar!!!")
+           resp = "Ímpar"
+        }*/
+        /*Após receber o nome a matéria e as notas dos 4 bimestres de um aluno, calcule a sua média final. e imprima o resultado deste aluno.
+         media >= 7 - aprovado
+         media >= 6.5 conselho
+         media >= 4 - recuperação
+         media < 4 reprovado
+         No final solte um alerta com nome, matéria, média final e o resultado.
+         */
+
+        let al, mta, nt1, nt2, nt3, nt4, mediaf;
+
+        al = prompt("Digite o(a) nome do aluno:");
+        mta = prompt("Digite a materia:");
+        nt1 = parseFloat(prompt("Digite a Primera nota:"));
+        nt2 = parseFloat(prompt("Digite a Segunda nota:"));
+        nt3 = parseFloat(prompt("Digite a Terceira nota:"));
+        nt4 = parseFloat(prompt("Digite a Quarta nota:"));
+
+        mediaf = ((nt1 + nt2 + nt3 + nt4)/4);
+
+        if(mediaf <0 ||  mediaf >10){ 
+            mediaf = "Media final invalida"
+        }else if(mediaf >= 7){ 
+            mediaf ="Aprovado"
+        }else if(mediaf >= 6.5){ 
+            mediaf = "Conselho"
+        }else if (mediaf >= 4){ 
+            mediaf = "Recuperação"
+        }else{ 
+            mediaf ="REPROVADO"
+        }   
+         alert("Aluno " + al + " da Materia " + mta + " NOTA FINAL DE TODOS OS BIMESTRE " +  mediaf  )
+
+
+
+    </script>
+</head>
+<body>
+    
+</body>
+</html>

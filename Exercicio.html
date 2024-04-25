@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Exercicio01</title>
+    <script>
+    
+        let raca, idade, cor, nomedodono, porte, nome, telefone, endereco, pet = []
+        do{
+            nomedodono = prompt('Digite o nome do dono: ')
+            telefone = prompt("Digite o telefone: ")
+            endereco = prompt('Digite o endereço: ')
+            nome = prompt('Digite o nome do pet: ')
+            idade = prompt("Digite a idade do pet: ")
+            cor = prompt('Digite o a cor do pet: ')
+            porte = prompt('Digite o porte do pet: ')
+            raca = prompt ('Digite o tipo de raça: ')
+            
+            if((animal = parseInt(prompt("Digite os número para 1- cão, 2- pássaro, 3 - gatos, 4 - outros")))
+             == 1){
+                animal ='parque de cães'
+            }else if(animal == 2){
+                animal = 'viveiro'
+            }else if(animal == 3){
+                animal = 'salas gatos'
+            }else{
+                animal = 'Gaiola'
+            }
+            console.log(animal)
+            console.log(nomedodono, telefone, endereco, nome, idade, cor, porte, raca)
+            alert( 'Raça do bicho é ' + raca + '\n' + 'Idade do bicho é  ' + idade + '\n' + 'Cor do pet é ' + cor + '\n' + 'O porte do pet é ' + porte + '\n' + 'Nome do bicho é ' + nome + '\n' + 'Nome do dono ' + nomedodono + '\n' + "Telefone do Dono: " + telefone + '\n' + 'Enedereço do dono: ' + endereco + '\n' + 'O pet irá entrar no(a) ' + animal)
+            repete = (prompt('Deseja digitar mais uma vez? (1)Adicionar mais um ou (0) Para finalizar o cadastro'))
+        }while(repete == 1)
+    </script>
+</head>
+<body>
+    
+</body>
+</html>

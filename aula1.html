@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Aula 01 - JS</title>
+    <!---Criando nosso primeiro programa em JS-->
+    <script>
+        /*
+        //Criando uma alerta na pagina
+        alert ("Olá, Mundo");
+        
+        //criando variaveis com "var"
+        var nome;
+
+        //atribuindo valor a variavel nome
+
+        nome = "Gustavo Barros";
+        
+        alert(nome);
+        alert("Olá " + nome + " , vc esta bem?");
+
+        nome = 5+6;
+        alert (nome);
+
+        nome =  prompt("Digite seu nome: ");
+        alert(nome); */
+
+        /* Programa troca de valores
+        * versão: v.1
+        *Autor: Gustavo Barros
+        * Licença: GNU
+        * Data 27/03/2024
+        */
+       /*var A, B, TEMP;
+
+       A = prompt("Digite uma cor: ");
+       B = prompt("Digite outra cor:");
+       
+       TEMP = A;
+       A = B;
+       B = TEMP;/*
+
+       /*alert("O valor da cor de A é: " + A);*/
+       /*alert("O valor da cor de B é: " + B);*/
+
+    // Operadores aritmético 
+    /* Exponencial                        -- **
+     * Multiplicação                      -- *
+     * Divisão                            -- /
+     * Módulo(Resto da divisão)           -- % 
+     * Adição                             -- +
+     * Subtração                          -- -
+     * Incrementar                        -- ++
+     * Decrementar                        -- --
+    */
+    //Operadores relacionais
+    /*
+     * Igualdade                          -- ==
+     * Igualdade absoluta                 -- ===
+     * Diferente de                       -- !=
+     * Diferente de absoluto              -- !==
+     * Maior que                          -- >
+     * Menor que                          -- <
+     * Maior ou igual a                   -- >=
+     * Menor ou igual a                   -- <=
+    */
+    //Operadores Lógicos 
+    /*
+     * Conjunção "E"                     -- &&
+     * Disjunção "OU"                    -- || 
+     * Negação   "NÃO"                   -- !
+    */
+
+    // criando variaveis com let
+    /**let a, b, result*/
+
+    // O parseInt converte o valor de entrada para número do tipo ineteiro
+    /*a = parseInt(prompt("Digte o 1º valor: "))
+    b = parseInt(prompt("Digite o 2º valor: "))
+
+    result = (a**b)
+    result = (a*b)
+    result = (a/b)
+    result = (a%b)
+    result = (a+b)
+    result = (a-b)
+
+    a++
+    a--
+    result = (a)
+
+    //o parseFloat converte o valor de entrada para número do tipo real
+    a = parseFloat(prompt("Digite o valor para A: "))
+    
+    result = a
+
+    alert("o resultado é:" + result)*/
+
+    /* Crie um programa que apos a entrada do nome, materia, notas avaliação 1, trabalho e avalição2, calcule a média para este bimestre no final solte um alerta com nome, matéria e média do bimestre.*/
+    
+    nome = "Gustavo Barros";
+        let nome, materia, nota2, result, trabalho;
+        alert(nome);
+        alert("Olá " + nome + " , vc esta bem?");
+        nome =  prompt("Digite seu nome: ");
+        materia =prompt("Digite a Materia:");
+        nota1= parseFloat(prompt("Digite a Nota 1:"));
+        nota2= parseFloat(prompt("Digite a Nota 2:"));
+        trabalho =parseFloat(prompt("Digite a nota do trabalho: "));
+
+        result=parseFloat((nota1+nota2+trabalho)/3);
+
+
+        alert("Nome "+ nome + " Materia  " + materia +  " Nota da Avalição:  " + result);
+    </script>
+</head>
+<body>
+    
+</body>
+</html>

@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <h1>
+        Olá meu projeto
+    </h1>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Aula 03 - JS</title>
+    <!--JavaScript Estruturas de Repetições-->
+    <script>
+        /* Estrutura de Repetição PARA */
+        /*let numero, i, resp
+        numero = parseInt(prompt("Digite um valor par multiplicação: "))
+        // Estrutura de Repetição Para
+        for(i=0; i<=100;i++){
+            resp = numero * i
+            // Console.log mostra o resultado em DOM do navegador
+            console.log(numero + "X" + i + "=" + resp)
+
+        }
+
+        i = 0
+        numero = parseInt(prompt("Digite um valor par multiplicação: "))
+        //Estrura de Repetição ENQUANTO
+        while(i <= 10){
+        resp = numero * i
+        console.log(numero + "x" + i + "=" + resp)
+        i++
+        }
+        i = 0
+        numero = parseInt(prompt('Digite um valor par multiplicação:'))
+        //Estrutura de Repetição REPITA
+        do{
+            rep = numero * i
+            console.log(numero + 'x' + i + '=' + resp)
+        }while(i <= 10)*/
+
+        /*let aluno, materia, bim1, bim2, bim3, mediafinal;
+
+        aluno = prompt("Digite o nome do aluno: ")
+        materia = prompt("Digite a materia: ")
+        bim1 = parseFloat(prompt("Digite a nota do 1º Bimestre: "))
+        while(bim1< 0 || bim1 >10){
+		 alert("Digite uma nota valida! A nota deve ser entre 0 a 10.\n")
+        bim1 = parseFloat(prompt("Digite a nota do 1º Bimestre: "))
+        }bim2 = parseFloat(prompt("Digite a nota do 2º Bimestre: "))
+        while(bim2< 0 || bim2 >10){
+		 alert("Digite uma nota valida! A nota deve ser entre 0 a 10.\n")
+		 bim2 = parseFloat(prompt("Digite a nota do 2º Bimestre: "))
+        }bim3 = parseFloat(prompt("Digite a nota do 3º Bimestre: "))
+        while(bim3< 0 || bim3 >10){
+		 alert("Digite uma nota valida! A nota deve ser entre 0 a 10.\n")
+		 bim3 = parseFloat(prompt("Digite a nota do 3º Bimestre: "))
+        }
+        mediafinal = ((bim1 + bim2 + bim3 )/4)
+        if(mediafinal >= 7){ 
+            mediafinal ="Aprovado"
+        }else if(mediafinal >= 6.5){ 
+            mediafinal = "Conselho"
+        }else if (mediafinal >= 4){ 
+            mediafinal = "Recuperação"
+        }else{ 
+            mediafinal ="REPROVADO"
+		}
+        alert("Aluno " + aluno + " da Materia " + materia + " NOTA FINAL DE TODOS OS BIMESTRE " +  mediafinal  )
+        */
+
+        var aluno, materia, bim1, bim2, bim3, media,resp, i, nBim ,repete;
+        
+        do{
+            aluno = prompt("Digite nome do aluno: ")
+            materia = prompt ("Digite a materia: ")
+            
+            media = 0 
+            for(i=1; i<=4;i++){
+            nBim = parseFloat(prompt("Digite a nota do + " + i + "º Bimestre: "))
+            while(nBim<0 || nBim > 10){
+                alert('ERRO - 01 - Nota do bimestre invalida!!!\n Notas validadas de 0 a 10!!!')
+                nBim = parseFloat(prompt("Digite a nota do" + i + " º Bimestre: "))
+
+            }
+            
+                media = media + nBim 
+        }
+                media = media/4
+
+                if(media > 10 ||  media < 0){ 
+                 resp = "Media final invalida"
+                }else if(media >= 7){ 
+                resp ="Aprovado"
+                }else if(media >= 6.5){ 
+                resp = "Conselho"
+                }else if (media >= 4){ 
+                resp = "Recuperação"
+                }else{ 
+                resp ="REPROVADO"
+                }
+              
+                alert("Aluno: " + aluno + "\n" + " Materia: " + materia + "\n" + " Notal final: " + media + "\n" + ' Você passou de ano: ' + resp)  
+                repete = (prompt("Deseja fazer novamente ? Digite 1 sim ou 2 não"))
+        }while(repete == 1)
+    </script>
+</head>
+<body>
+</body>
+</html>
